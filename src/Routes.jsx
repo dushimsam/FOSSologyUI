@@ -20,6 +20,7 @@
 import React from "react";
 import routes from "constants/routes";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ManageMantainance from "pages/Admin/Mantainance";
 
 // Guards imports
 const PublicLayout = React.lazy(() => import("shared/PublicLayout"));
@@ -297,6 +298,12 @@ const Routes = () => {
             exact
             path={routes.admin.users.delete}
             component={DeleteUser}
+          />
+
+          <AdminLayout
+            exact
+            path={routes.admin.mantainance}
+            component={ManageMantainance}
           />
 
           {/* Default Page */}
