@@ -95,6 +95,9 @@ const AddLicense = React.lazy(() => import("pages/Admin/License/Create"));
 const SelectLicense = React.lazy(() =>
   import("pages/Admin/License/SelectLicense")
 );
+const DuplicateBucketPool = React.lazy(() =>
+  import("pages/Admin/Buckets/DuplicateBucketpool")
+);
 
 // Default Page
 const ErrorPage = React.lazy(() => import("pages/ErrorPage"));
@@ -297,6 +300,11 @@ const Routes = () => {
             exact
             path={routes.admin.users.delete}
             component={DeleteUser}
+          />
+          <AdminLayout
+            exact
+            path={routes.admin.buckets.duplicateBucketPool}
+            component={DuplicateBucketPool}
           />
 
           {/* Default Page */}

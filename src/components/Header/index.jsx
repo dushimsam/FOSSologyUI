@@ -279,6 +279,22 @@ const Header = () => {
                     <DropdownButton
                       variant=""
                       drop="right"
+                      title="Buckets"
+                      className="font-regular dropdown-item-bottom w-100"
+                    >
+                      <div className="bg-secondaryColor text-white font-12 py-2">
+                        <NavDropdown.Item
+                          as={Link}
+                          to={routes.admin.buckets.duplicateBucketPool}
+                        >
+                          Duplicate Bucketpool
+                        </NavDropdown.Item>
+                      </div>
+                    </DropdownButton>
+
+                    <DropdownButton
+                      variant=""
+                      drop="right"
                       title="License Administration"
                       className="font-regular dropdown-item-bottom w-100"
                     >

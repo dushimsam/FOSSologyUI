@@ -241,3 +241,11 @@ export const initialFolderList = [
     parent: null,
   },
 ];
+
+export const initialBucketpoolList = [
+  {
+    id: 1,
+    name: "GPL Demo pucket pool, v 1",
+    description: "Default bucket pool",
+  },
+];
